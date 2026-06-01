@@ -103,6 +103,25 @@ ol {
   letter-spacing: -0.02em;
 }
 
+.brand-logo {
+  display: block;
+  height: 31px;
+  width: auto;
+  max-width: 142px;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.brand-text {
+  color: rgba(248, 250, 252, 0.8);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
 .brand-mark {
   width: 36px;
   height: 36px;
@@ -338,6 +357,13 @@ ol {
   box-shadow: 0 0 18px rgba(94, 234, 212, 0.4);
 }
 
+.ask-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem 1.4rem;
+  margin-top: 1.2rem;
+}
+
 .large-card .check-list {
   margin-top: 1.5rem;
   display: grid;
@@ -412,6 +438,11 @@ ol {
 .pathway-card p {
   margin-top: auto;
   padding-top: 1.1rem;
+}
+
+.nowrap-heading {
+  white-space: nowrap;
+  font-size: clamp(1.05rem, 1.12vw, 1.25rem);
 }
 
 .pathway-arrow {
@@ -619,6 +650,7 @@ td:first-child {
   .objection-grid,
   .three-col,
   .two-col-list,
+  .ask-list,
   .valr-case-grid,
   .logic-chain {
     grid-template-columns: 1fr;
@@ -649,6 +681,11 @@ td:first-child {
   .pathway-card p {
     margin-top: 0;
   }
+
+  .nowrap-heading {
+    white-space: normal;
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 720px) {
@@ -661,6 +698,11 @@ td:first-child {
     width: 100%;
     overflow-x: auto;
     padding-bottom: 0.2rem;
+  }
+
+  .brand-logo {
+    height: 28px;
+    max-width: 126px;
   }
 
   .section-shell {
