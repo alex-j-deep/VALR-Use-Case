@@ -149,7 +149,8 @@ ol {
   min-height: calc(100vh - 70px);
   display: grid;
   grid-template-columns: minmax(0, 1fr) 390px;
-  align-items: center;
+  align-content: center;
+  align-items: start;
   gap: 2rem;
 }
 
@@ -218,6 +219,7 @@ ol {
 }
 
 .hero-bluf {
+  margin-top: calc((0.78rem * 1.6) + 1rem);
   border-radius: var(--radius-lg);
   border: 1px solid rgba(94, 234, 212, 0.24);
   background:
@@ -765,6 +767,7 @@ td:first-child {
 
   .hero-bluf {
     max-width: 760px;
+    margin-top: 0;
   }
 
   .pathway {
